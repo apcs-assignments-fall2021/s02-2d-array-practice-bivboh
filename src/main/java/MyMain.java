@@ -67,8 +67,15 @@ public class MyMain {
 
     // Returns the mean of the 2D array mat
     public static double mean(double[][] mat) {
-        // YOUR CODE HERE
-        return -1.0;
+        double mean = 0;
+        double count = 0;
+        for (int row = 0; row < mat.length; row++){
+            for (int col = 0; col < mat[0].length; col++){
+                mean += mat[row][col];
+                count ++;
+            }
+        }
+        return mean/count;
     }
 
     // Returns the median of the 2D array mat
